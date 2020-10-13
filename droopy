@@ -328,9 +328,9 @@ class HTTPUploadHandler(httpserver.BaseHTTPRequestHandler):
                 root, ext = os.path.splitext(localpath)
                 i = 1
                 # TODO: race condition...
-                while os.path.exists(localpath):
-                    localpath = "%s-%d%s" % (root, i, ext)
-                    i = i + 1
+                #while os.path.exists(localpath):
+                #    localpath = "%s-%d%s" % (root, i, ext)
+                #    i = i + 1
                 if hasattr(item, 'tmpfile'):
                     # DroopyFieldStorage.make_file() has been called
                     item.tmpfile.close()
