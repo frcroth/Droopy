@@ -492,6 +492,7 @@ a {color: #4499cc; text-decoration: none;}
 #progress td {height: 17px; width: 17px; background-color: #eee;
               padding: 0px; border-radius: 90px; box-shadow: 0 0 3px #bbb;}
 #userinfo {padding-bottom: 20px;}
+#hintlink {text-align: right; padding-right: 5%%;}
 #files {
   margin: auto;
   padding: 13px 0;
@@ -562,6 +563,9 @@ function onunload() {
 </div>
 ''' + userinfo + '''
 %(files)s
+<div id="hintlink">
+    <a href="https://github.com/frcroth/droopy">GitHub Source</a>
+</div>
 </div>
 </body>
 </html>

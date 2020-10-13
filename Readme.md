@@ -36,6 +36,8 @@ On Linux, droopy can be run directly without specifically calling `python3`, so
 you can put `droopy` into a folder that's in your system PATH variable, such as
 `/usr/bin/` and call it directly: `droopy --help`.
 
+You can access the files with directory listing or with a direct link (e.g. `localhost:8000/myfile.txt`).
+
 ### Feedback and contribution
 I’d love to hear about your experience using droopy.
 If you have ideas to improve it, please let me know.
