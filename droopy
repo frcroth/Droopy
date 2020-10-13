@@ -350,6 +350,7 @@ class HTTPUploadHandler(httpserver.BaseHTTPRequestHandler):
                 self.send_resp_headers(301, {'Location': '/'}, end=True)
             else:
                 self.send_html(self.html("success"))
+                os.execl(sys.executable, sys.executable, *sys.argv)
 
         except Exception as e:
             self.log_message(repr(e))
